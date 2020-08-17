@@ -1,0 +1,34 @@
+/*	Borders in CSS have Three Parts
+	width
+	color
+	style 	*/
+
+
+
+h1 {
+	/* Color in CSS with Hexadecimal */
+	color: #F400DD;
+/*	One way of creating border in CSS
+	border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+/*	Another way of creating border in CSS: [border: width, style, color;] */
+	border: 5px solid purple;
+}
+
+li {
+	/* Color in CSS with RGB */
+	color: rgb(68,0,100);
+}
+
+h4 {
+	/* Color in CSS with RGBA */
+	color: rgba(50, 20, 80, .3);
+	background: rgb(255, 100, 80);
+}
+
+body {
+	/*background: url(https://previews.123rf.com/images/prapann/prapann1805/prapann180500442/102152680-wooden-texture-wood-grain.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
