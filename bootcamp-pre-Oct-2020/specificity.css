@@ -1,0 +1,43 @@
+/*Type Selectors - Least specific */
+
+ul {
+	color: blue;
+}
+
+body {
+	color: red;
+}
+
+p {
+	color: green;
+}
+
+li	{
+	color: orange;
+}
+
+li a {
+	/* higher order of specificity than previous examples*/
+}
+
+li + a {
+	/* higher order of specificity than previous examples*/
+}
+
+/*Class, Attribute, and Pseudo-Class Selectors - Higher order of Specificity*/
+.highlight {
+	color: yellow;
+}
+
+input[type="text"] {
+
+}
+
+	/*Pseudo-Class selectors*/
+a:hover
+input:checked
+
+/*ID Selector - Highest order of Specificity*/
+#special {
+	color: pink;
+}
