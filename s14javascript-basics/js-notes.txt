@@ -1,0 +1,35 @@
+JavaScript Tips and Basic Syntax Cheat Sheet
+
+Primitive - "Number"
+JS only uses primitive "Number" to represent both integers and decimals (postive and negative). 
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number 
+
+    The JavaScript Number type is a double-precision 64-bit binary format IEEE 754 value, like double in Java or C#. 
+    A Number only keeps about 17 decimal places of precision; arithmetic is subject to rounding. 
+    The largest value a Number can hold is about 1.8×10308. Numbers beyond that are replaced with the special Number constant Infinity.
+
+    A number literal like 37 in JavaScript code is a floating-point value, not an integer. 
+    There is no separate integer type in common everyday use. 
+
+    Number may also be expressed in literal forms like 0b101, 0o13, 0x0A.
+
+    When used as a function, Number(value) converts a string or other value to the Number type. If the value can't be converted, it returns NaN.
+
+Comment - "//"
+JS uses "//" to denote comments.
+
+Number - "NaN" 
+"Not a number" is defined as a "Number" in JS although what it describes and is representing is not actually a number.
+
+Operator - "typeof"
+Same functionality as "type" in Java.
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+
+
+Operator - "**"
+The exponent operator in JS; can simply use "**" instead of having to call a method such as Math.pow() in Java.
+
+
+
+
+
