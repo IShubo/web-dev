@@ -1,47 +1,130 @@
 JavaScript Tips and Basic Syntax Cheat Sheet
 
+Quick Tips
 
-Primitive - "Number"
-JS only uses primitive "Number" to represent both integers and decimals (postive and negative). 
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number 
+    Boolean variable names can start with "is" as a way of denoting its a boolean. 
+    Ex: let isLoggedIn = false; // This reads nicely and a good way to identify booleans easily
+                vs 
+        let loggedin = false; // A bit more ambiguous 
 
-    The JavaScript Number type is a double-precision 64-bit binary format IEEE 754 value, like double in Java or C#. 
-    A Number only keeps about 17 decimal places of precision; arithmetic is subject to rounding. 
-    The largest value a Number can hold is about 1.8×10308. Numbers beyond that are replaced with the special Number constant Infinity.
-
-    A number literal like 37 in JavaScript code is a floating-point value, not an integer. 
-    There is no separate integer type in common everyday use. 
-
-    Number may also be expressed in literal forms like 0b101, 0o13, 0x0A.
-
-    When used as a function, Number(value) converts a string or other value to the Number type. If the value can't be converted, it returns NaN.
-
-
-Comment - "//"
-JS uses "//" to denote comments.
+    
+    String Template Literal
+    Strings created using the "`" back tick key, the key left of 1, same key as tilde, can be used in conjunction with:
+    the string "${...}" to allow JavaScript to evaluate the content inside the {}.
+    Has to be back ticks ` not the single quote ' .
+    Ex: msg = `I have ${5 + 3} apples`;
+            output:"I have 8 apples"
 
 
-Number - "NaN" 
-"Not a number" is defined as a "Number" in JS although what it describes and is representing is not actually a number.
+    Primitive - Null 
+    TODO
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null
 
 
-Operator - "typeof"
-Same functionality as "type" in Java.
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+    Primitive - Undefined
+    TODO
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined
+    
+
+    Built in Object - Math
+    Simialar to Java where Math is a built in object with methods and properties.
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
 
-Operator - "**"
-The exponent operator in JS; can simply use "**" instead of having to call a method such as Math.pow() in Java.
+Shortcuts 
+
+    Mac - Clear the js console = "cmd + k" 
 
 
-Statement - "let"
-The "let" statement declares a block-scoped local variable, optionally initializing it to a value.
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+Section 14 - JavaScript Basics 
+
+    Primitive - "Number"
+    JS only uses primitive "Number" to represent both integers and decimals (postive and negative). 
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number 
+
+        The JavaScript Number type is a double-precision 64-bit binary format IEEE 754 value, like double in Java or C#. 
+        A Number only keeps about 17 decimal places of precision; arithmetic is subject to rounding. 
+        The largest value a Number can hold is about 1.8×10308. Numbers beyond that are replaced with the special Number constant Infinity.
+
+        A number literal like 37 in JavaScript code is a floating-point value, not an integer. 
+        There is no separate integer type in common everyday use. 
+
+        Number may also be expressed in literal forms like 0b101, 0o13, 0x0A.
+
+        When used as a function, Number(value) converts a string or other value to the Number type. If the value can't be converted, it returns NaN.
 
 
-Statement - "const"
-The "const" statement creates a constant variable that can not be changed.
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
+    Comment - "//"
+    JS uses "//" to denote comments.
+
+
+    Number - "NaN" 
+    "Not a number" is defined as a "Number" in JS although what it describes and is representing is not actually a number.
+
+
+    Operator - "typeof"
+    Same functionality as "type" in Java.
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+
+
+    Operator - "**"
+    The exponent operator in JS; can simply use "**" instead of having to call a method such as Math.pow() in Java.
+
+
+    Statement - "let"
+    The "let" statement declares a block-scoped local variable, optionally initializing it to a value.
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+
+
+    Statement - "const"
+    The "const" statement creates a constant variable that can not be changed.
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
+
+
+    Naming Conventions - "firstSecondThird..."
+    Variables use lower camel case naming conventions, same as Java, and similarly variables do not start with numbers or characters.
+        https://developer.mozilla.org/en-US/docs/Glossary/Identifier
+
+
+Section 15 - JavaScript Strings and More
+
+    String Method - Trim 
+    The method ".trim()" will delete extra spaces at the start and end of a string.
+    Ex: let userInput = "     hello world!     "
+            output: "hello world!" 
+        (the variable or original string remains unchanged and only works for space characters)
+
+    
+    String Method - IndexOf
+    Method ".indexOf()" will find the index of where the argument first appears inside a string, or returns "-1" if it can not be found.
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
+
+    
+    String Method - Slice
+    Method ".slice()" returns the portion of a string based on the passed arguments. 
+    Pass the starting value and ending value, although the ending value is optional.
+    Can also pass negative numbers and it will return the last n index's of the string.
+    Ex: let msg = "hello world!";
+        msg.slice(-3);
+            output: "ld!"
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
+
+    String Method - Replace
+    Method ".replace()" takes two arguments to find the first instance of the first argument in a string and it will replace it with the second argument.
+    There is a method called ".replaceAll()" although it may not work in all browsers.
+    Ex: let msg = "hello world!";
+        msg.replace("o", "q");
+            output: "hellq world!"
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+
+
+    Built in Object - Math
+    Simialar to Java where Math is a built in object with methods and properties.
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+
+    
+    
 
 
 
