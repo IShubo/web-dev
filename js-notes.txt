@@ -31,6 +31,10 @@ Quick Tips
         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
 
+    JavaScript Script Tag in HTML
+    The "<script></script>" should be put at the end of the "<body></body>" in the HTML file for good practice.
+
+
 Shortcuts 
 
     Mac - Clear the js console = "cmd + k" 
@@ -123,10 +127,48 @@ Section 15 - JavaScript Strings and More
         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
 
+Section 16 - JavaSript Decision Making
+
+    Comparison Operator - "==" (double equals) 
+    Checks for equality of value, but not equality of type.
+    It coerces both values to the same type and then compares them which can lead to unexpected results.
+    Ex: 5 == 5;             // true
+        'b' == 'c';         // false
+        7 == '7';           // true <--
+        0 == '';            // true <--
+        true == false;      // false
+        0 == false;         // true <--
+        null == undefined   // true <--
     
     
+    Comparison Operator - "===" (triple equals)
+    Checks for equality of value AND TYPE. 
+    Same applies for != and !== .
+    Ex: 5 === 5;            // true
+        1 === 2;            // false
+        2 === '2';          // false
+        false === 0;        // false
+
+        10 != '10';         // false <--
+        10 !== '10';        // true 
 
 
+    Object - console.log()
+    Prints the argument to console. 
+        https://developer.mozilla.org/en-US/docs/Web/API/Console/log
+    
+
+    Method - Alert
+    Displays an alert dialog with the optional specified content and an OK button.
+        https://developer.mozilla.org/en-US/docs/Web/API/Window/alert
+    
+
+    Method - Prompt
+    Displays a dialog with an optional message prompting the user to unput some text.
+        https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt
+
+
+    
 
 
 
