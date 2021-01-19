@@ -34,6 +34,15 @@ Quick Tips
     JavaScript Script Tag in HTML
     The "<script></script>" should be put at the end of the "<body></body>" in the HTML file for good practice.
 
+    Truthy-Falsy Values in JS
+    The only values which are False-y are:
+        false
+        0
+        "" (empty string)
+        null
+        undefined
+        NaN
+    All other values are inherently Truth-y
 
 Shortcuts 
 
