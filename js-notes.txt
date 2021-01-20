@@ -136,7 +136,7 @@ Section 15 - JavaScript Strings and More
         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
 
-Section 16 - JavaSript Decision Making
+Section 16 - JavaScript Decision Making
 
     Comparison Operator - "==" (double equals) 
     Checks for equality of value, but not equality of type.
@@ -176,6 +176,43 @@ Section 16 - JavaSript Decision Making
     Displays a dialog with an optional message prompting the user to unput some text.
         https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt
 
+
+Section 17 - JavaScript Arrays
+
+    Useful Array methods:
+            .push()
+            .pop()
+            .shift()
+            .unshift()
+            .concat()
+            .indexOf()
+            .includes()
+            .reverse()
+            .slice()
+            .splice()
+            .sort()
+            
+
+    Method - Push
+    .push() adds one or more elements to the end of an array and returns the new length of the array.
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+
+
+    Method - Pop 
+    .pop() removes the last element from an array and returns that element. 
+    This method changes the length of the array.
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
+
+
+    Method - Shift
+    .shift() method removes the first element from an array and returns that removed element. 
+    This method changes the length of the array.
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
+
+
+    Method - Unshift
+    .unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
 
     
 
