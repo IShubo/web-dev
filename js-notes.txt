@@ -215,6 +215,14 @@ Section 17 - JavaScript Arrays
         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
 
     
+Section 18 - JavaScript Object Literals
+
+    Tips:
+        Objects are typically made using "const" instead of "let" although both can be used. 
+        "Const" does NOT create immutable variables, instead it creates immutable bindings. 
+            https://stackoverflow.com/questions/44604212/when-to-use-const-with-objects-in-javascript#:~:text=According%20to%20ES6%2DFeatures.org,itself%20can%20still%20be%20altered.
+
+
 
 
 
