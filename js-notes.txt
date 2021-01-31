@@ -217,14 +217,46 @@ Section 17 - JavaScript Arrays
     
 Section 18 - JavaScript Object Literals
 
-    Tips:
+    Objects - 
         Objects are typically made using "const" instead of "let" although both can be used. 
         "Const" does NOT create immutable variables, instead it creates immutable bindings. 
             https://stackoverflow.com/questions/44604212/when-to-use-const-with-objects-in-javascript#:~:text=According%20to%20ES6%2DFeatures.org,itself%20can%20still%20be%20altered.
 
 
+Section 19 - Repeating Stuff With Loops
+
+    Statement - For (LOOP)
+        For loops in JavaScript work in same manner and syntactically as in Java.
+        Ex: for (let [initialization]; [condition]; [final-expression]) {
+                statement
+            }
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
+    
+
+    Statement - While (LOOP)
+        While loops in JavaScript work in same manner and syntactically as in Java.
+        Ex: while (condition) {
+                statement
+            }
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while
 
 
+    Statement - For Of (LOOP)
+        For-of loops in JavaScript let you iterate through iterables in a simpler fashion that creating a for loop.
+        Ex: for (let [variable] of [iterable]) {
+            statement
+        }     
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+
+
+    Function - .isNaN 
+        "isNaN()" is used to check if a value is NaN but works a bit oddly. 
+        In Section 19 - ToDo List Project Code Along, Numbers.isNaN is used and it works slightly differently. 
+        MDN describes it the best in the different ways it can be used and what other ways to check if a value is NaN.
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN 
+        
+
+    
 
 
 
