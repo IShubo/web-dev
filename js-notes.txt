@@ -44,6 +44,12 @@ Quick Tips
         NaN
     All other values are inherently Truth-y
 
+
+    Functions vs Methods 
+    "A method, like a function, is a set of instructions that perform a task. The difference is that a method is associated with an object, while a function is not."
+    https://www.codecademy.com/articles/fwd-js-methods-functions#:~:text=A%20method%2C%20like%20a%20function,while%20a%20function%20is%20not.
+
+
 Shortcuts 
 
     Mac - Clear the js console = "cmd + k" 
@@ -256,7 +262,25 @@ Section 19 - Repeating Stuff With Loops
             https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN 
         
 
-    
+Section 20 - Introducing Functions
+
+    Statement - return 
+        The "return" statement ends function execution and specifies a value to be returned to the function caller.
+        The usefulness of using "return" in our functions or methods is that it lets us get output from a function or method, 
+        while also being able to save and manipulate the output further, whereas printing (console.log()'ing) does not 
+        allow us to do this, those outputs are "undefined" and can not be stored.
+
+        Return also can only return ONE value, although the value could hold more values/data (such as an array) but only thing.
+
+        Ex: function add(x y){
+            return x + y; 
+        }
+        const sum = add(2, 6);
+        sum; //8
+
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return
+
+
 
 
 
